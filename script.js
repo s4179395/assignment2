@@ -1,6 +1,6 @@
 
 /* because of the relaxtion theme I wanted to attempt to create a timer with the settings of a pomodoro timer, so using a youtube tutorial for a simple timer I got the basic idea of a pause and play button 
-and also a set time button, and used to create 3 buttons for different set times that are used when timing yourself using the pomodoro technique */
+and also a set time button, and used to create 3 buttons for different set times that are used when timing yourself using the pomodoro technique (https://www.youtube.com/watch?v=PIiMSMz7KzM&t=1253s) */
 class Timer {
     
     constructor(root) 
