@@ -17,6 +17,8 @@ class Timer {
             lbreak: root.querySelector(".timer__btn--lbreak")
         };
 
+/* I had initially made a mistake just above where I had messed up the amount of comma's and it was enough to destroy my entire code, it took alot of looking at my code and seeing if everything was written correctly to figure this out */
+
         this.interval = null;
         this.remainingSeconds = 0;
 
@@ -79,6 +81,7 @@ class Timer {
 
     }
 
+/* this just gives the code an understanding of what to change the images to when either its playing or paused */
     updateinterfaceControls() {
         if (this.interval === null) {
             this.el.control.innerHTML = `<span> <img
@@ -96,7 +99,7 @@ class Timer {
             this.el.control.innerHTML = `<span><img
               id="play-pause-img"
               src="https://img.icons8.com/pause"
-              alt="Play Button"
+              alt="Pause Button"
               width="20"
               height="20"
               text-align="center"
@@ -129,6 +132,7 @@ class Timer {
         this.updateinterfaceControls();
     }
 
+    /* this was html that needed to be added within the timer, that the timer calls onto, and it was interesting to figure out like how you can add different codding to html, you can do the same for javascript */
     static getHTML() {
         return  `
             <span class="timer__part timer__part--minutes">00</span>
@@ -189,7 +193,8 @@ new Timer(
     document.querySelector(".timer")
 );
 /* I really liked the vplayer in class we looked at but I wanted to make sure it fit the idea I wanted to make, because of this I adjusted the code as I wrote it to not include things that were unneccasary for my idea and to also make sure it all
-worked for the theme of my work, this meant using different icons and different videos. */
+worked for the theme of my work, this meant using different icons and different videos. I mainly focused on adding a pause and mute feature for when you want to stop the music and just focus, and a fullscreen feature incase you have a second monitor or are
+working with paper so you have less access to your computer screen */
 const videoList = [
     { id: 1, src: "rain.mp4" },
     { id: 2, src: "how.mp4" },
@@ -251,6 +256,8 @@ function toggleAudio() {
 const rainButton = document.querySelector("#rain-vid-button")
 console.log(rainButton);
 
+/* I found it interesting that the id's were 1-3 but playvideo is 0-2 */
+
 rainButton.addEventListener("click", function chooseVideo() {
     playVideo(0);
 });
@@ -279,6 +286,8 @@ const fullscreenButton = document.querySelector("#fullscreen-button");
 console.log(fullscreenButton);
 
 fullscreenButton.addEventListener("click", toggleFullscreen);
+
+/* learning how to add fullscreen was an interesting piece of code and while its relatively simple I wasn't really expecting it to be, but it makes sense since it would be so commonly used */
 
 function toggleFullscreen() {
     if (!document.fullscreenElement) {
