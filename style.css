@@ -1,0 +1,238 @@
+ /* My inspiration for the styling of my website was lofi, which can someone use a very purple-ish aesthetic which I tried to incorporte in my work, everything is coloured either purple or purple adjacent to really make it feel
+ like a night time relaxation/study session while also allowing for all the parts of the websites to fit eachother well */
+
+:root {
+  background-image: url('rainbackground.gif');
+  --text-color: #c8c8c8;
+  --main-bg-color: #351176;
+  --main-text-color: #fff;
+  --main-btn-bg-color: #4a4646;
+  
+}
+.timer
+{
+  font-family: 'Courier New', Courier, monospace, bold;
+  padding: 20px;
+  font-size: 0.9rem;
+  background-color: #b08cf5;
+  border-radius: 12px;
+  color: #261136;
+  border: 6px double #7d49dc;
+  font-weight: 900;
+}
+
+.timer__btnpomodoro 
+{
+  cursor: pointer;
+  padding: 10px;
+  font-size: 0rem;
+  background-color: #805cbf;
+  border-radius: 12px;
+}
+
+.timer__btnpomodoro:hover
+{
+  scale: 0.9;
+}
+
+.timer__btnsbreak 
+{
+  cursor: pointer;
+  padding: 10px;
+  font-size: 0rem;
+  background-color: #596cba;
+  border-radius: 12px;
+}
+
+
+
+.timer__btnlbreak 
+{
+  cursor: pointer;
+  padding: 10px;
+  font-size: 0rem;
+  background-color: #596cba;
+  border-radius: 12px;
+}
+
+.timer__btnplaypause 
+{
+  cursor: pointer;
+  padding: 10px;
+  font-size: 0rem;
+  background-color: #596cba;
+  border-radius: 12px;
+}
+
+.timer__part
+{
+ font-size: 30px;
+ font-weight: bold;
+}
+
+.timer__btn--start
+{
+  background: rgb(76, 145, 134);
+}
+
+.timer__btn--stop
+{
+  background: rgb(137, 103, 41);
+}
+
+.timer_btn--subtitle
+{
+  font-size: 0.8rem
+}
+
+body,
+h1,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: var(--primary-bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 900;
+  color: #261136;
+  font-family: 'Courier New', Courier, monospace, bold;
+}
+
+/* Add additional styles as needed */
+
+/* Create a container for the main content */
+.container {
+  max-width: 1000px;
+  width: 100%;
+  border-radius: 30px;
+  padding: 10px;
+  background-color: #261136;
+}
+
+/* Header styling */
+header {
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+  padding: 10px 0;
+  text-align: center;
+  width: 100%;
+  border-radius: 12px;
+}
+
+/* Navigation styling */
+nav {
+  margin-top: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+/* Media player styling */
+.main-screen, .controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-screen {
+  max-width: 100%;
+  padding: 10px;
+}
+
+video
+{
+  width: 800px;
+  height: auto;
+  border-radius: 12px;
+  
+}
+
+.playlist
+{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+
+  padding: 10px;
+  border-bottom: 6px double #8159cb;
+}
+
+#progress-bar-container
+{
+  width: 100%;
+  height: 10px;
+  background-color: #41188d;
+}
+
+#progress-bar
+{
+  width: 0%;
+  display: block;
+  background-color: #9870e2;
+  height: 100%;
+  transition: width 0.2s ease;
+}
+
+
+.controls {
+  gap: 10px;
+  padding: 10px;
+}
+
+button
+{
+  cursor: pointer;
+  padding: 10px;
+  font-size: 1.2rem;
+  color: #453461;
+  border-radius: 12px;
+  background-color: #b08cf5;
+  font-weight: 900;
+  color: #261136;
+  font-family: 'Courier New', Courier, monospace, bold;
+}
+
+button:hover
+{
+  scale: 0.9;
+}
+
+/* Footer styling */
+footer {
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+  font-weight: 200;
+  color: #ffffff;
+  font-family: 'Courier New', Courier, monospace, bold;
+}
+
+.double-border {
+  border: 6px double #7d49dc;
+  border-radius: 16px;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header class="double-border">
+      <h1>Relaxation and Studying</h1>
+    </header>
+    <h2></h2>
+
+
+    <!-- this is where most of the main content is, i have a class for the screen, the playlist where you choose each song, I wanted to have a few songs to choose from so that you could either play one song on repeat or mix it up a bit, and having you be able to 
+     click in through the website instead of youtube would allow you stay focused while also allowing you to constant check what time the pomodoro timer is at -->
+    <main class="container">
+      <!-- Media Player Section -->
+      <div class="main-screen">
+        <video src="rain.mp4" id="my-video"></video>
+      </div>
+      <div class="playlist">
+        <button class="double-border" id="rain-vid-button">Rain</button>
+         <button class="double-border" id="how-vid-button">How</button>
+          <button class="double-border" id="dont-vid-button">Don't</button>
+      </div>
+      <div class="controls">
+        <button class="double-border" id="play-pause-button">
+          <img src="https://img.icons8.com/play" id="play-pause-img"></img>
+        </button>
+
+          <button class="double-border" id="mute-unmute-button">
+          <img src="https://img.icons8.com/high-volume" id="mute-unmute-img"></img>
+        </button>
+
+        <div id="progress-bar-container"><span id="progress-bar"></span></div>
+
+          <button class="double-border" id="fullscreen-button">
+          <img src="https://img.icons8.com/full-screen" id="fullscreen-image"></img> 
+        </button>
+
+      </div>
+
+      <!-- Additional Content Section -->
+      <section>
+        <h2>Pomodoro Timer:</h2>
+       <div class="timer"></div>
+        <!-- Add more content as needed -->
+      </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="double-border">
+      <p>&copy; 2026 Media Player Website. All rights reserved.</p>
+      <a href="https://icons8.com/icon/59862/play">Play</a> icon by
+      <a href="https://icons8.com">Icons8</a>
+      <a href="https://icons8.com/icon/61012/pause">Pause</a> icon by
+      <a href="https://icons8.com">Icons8</a>
+      <p>Music by <a href="https://www.youtube.com/@leemindme">Lee</a> - All Rights Reserved © - Lee</p>
+
+    </footer>
+
+
+
+
+  </body>
+</html>
