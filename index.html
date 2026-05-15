@@ -11,6 +11,7 @@
   <body>
     <!-- Header Section -->
     <header class="double-border">
+        <!-- The tutorial I used added a double border and while I wanted to seperate my aesthetic from the tutorial, the double border looks very visually appealing I wanted to keep it within my work -->
       <h1>Relaxation and Studying</h1>
     </header>
     <h2></h2>
@@ -29,6 +30,7 @@
           <button class="double-border" id="dont-vid-button">Don't</button>
       </div>
       <div class="controls">
+          <!-- I had an issue here where I didn't id the img and only the button which caused some issues in my javascript code that I thankfully was able to notice -->
         <button class="double-border" id="play-pause-button">
           <img src="https://img.icons8.com/play" id="play-pause-img"></img>
         </button>
@@ -36,6 +38,9 @@
           <button class="double-border" id="mute-unmute-button">
           <img src="https://img.icons8.com/high-volume" id="mute-unmute-img"></img>
         </button>
+
+          <!-- I initially forgot to id the progress bar and when referencing the vplayer code i wasn't able to pick it from all the button codes, but after troubleshooting I realised i did not reference the progress bar at all in my html code so I made
+        sure to add it.-->
 
         <div id="progress-bar-container"><span id="progress-bar"></span></div>
 
@@ -46,14 +51,14 @@
       </div>
 
       <!-- This is where I decided to add the pomodoro timer as I felt like it should be below
-      the main media playee -->
+      the main media player -->
       <section>
         <h2>Pomodoro Timer:</h2>
        <div class="timer"></div>
       </section>
     </main>
 
-    <!-- Footer Section, added the reference of the youtuber whos music I used-->
+    <!-- Footer Section, added the reference of the youtuber whos music I used and also added the reference for the rain gif I edited, it was much faster and a different colour initially-->
     <footer class="double-border">
       <p>&copy; 2026 Media Player Website. All rights reserved.</p>
       <a href="https://icons8.com/icon/59862/play">Play</a> icon by
