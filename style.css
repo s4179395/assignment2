@@ -30,11 +30,6 @@
   border-radius: 12px;
 }
 
-.timer__btnpomodoro:hover
-{
-  scale: 0.9;
-}
-
 .timer__btnsbreak 
 {
   cursor: pointer;
@@ -149,7 +144,7 @@ nav a {
   color: var(--text-color);
 }
 
-/* Media player styling */
+/* I wasn't aware initially you could style 2 things the same way like this so it was an interesting piece of code to learn */
 .main-screen, .controls {
   display: flex;
   justify-content: center;
@@ -169,6 +164,7 @@ video
   
 }
 
+/* this is just helps with making sure the list of videos is spaced out evenly and fairly to fill out the space they occupy */
 .playlist
 {
   display: flex;
@@ -215,6 +211,8 @@ button
   font-family: 'Courier New', Courier, monospace, bold;
 }
 
+/* this was something I didn't fully know about, that you could add styles for when you hover over buttons, and it really added a layer of user interactivity just giving it an extra layer of polish */
+
 button:hover
 {
   scale: 0.9;
@@ -232,6 +230,7 @@ footer {
   font-family: 'Courier New', Courier, monospace, bold;
 }
 
+/* this was the double border design I saw in one of the examples in class and while I customised the colour to fit my work I really appreciate how it helps the overall design and aesthetic of the work */
 .double-border {
   border: 6px double #7d49dc;
   border-radius: 16px;
